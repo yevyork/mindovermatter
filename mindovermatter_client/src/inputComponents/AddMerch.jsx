@@ -1,16 +1,13 @@
 import React from 'react';
 
-class Merch extends React.Component {
+class AddMerch extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  }
     }
     render() { 
-        return ( 
-        <>
-Merch
-        </> );
+        return ( <></>  );
     }
 }
-
-export default Merch ;
+ 
+export default AddMerch;

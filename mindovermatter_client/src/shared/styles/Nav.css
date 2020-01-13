@@ -8,9 +8,33 @@
     color: rgba(255, 255, 255, 0.397);
     line-height: 50px;
     margin: 15px 40px 15px 0px;
+    width: 60px;
 }
 
 .active {
     color: rgb(255, 255, 255);
+    animation: unblur 0.4s normal forwards ease-in-out;
+}
 
+.nav:hover {
+    animation: movenav 0.4s normal forwards ease-in-out;
+}
+
+@keyframes unblur {
+    0% {
+      filter: opacity(0);
+    }
+  
+    100% {
+      filter: opacity(1);
+    }
+}
+
+@keyframes movenav {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
 }

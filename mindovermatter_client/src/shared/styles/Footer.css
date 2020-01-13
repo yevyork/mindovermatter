@@ -2,6 +2,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-bottom: 5%;
+    margin-top: 40px;
 }
 
 .footer-icon {
@@ -19,7 +20,7 @@ footer {
     border-radius: 16px;
 }
 
-.ra{ 
+.ra { 
     height: 40px;
     margin-top: 5px;
 }
