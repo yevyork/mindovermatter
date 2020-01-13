@@ -1,0 +1,9 @@
+.home-container {
+    height: 350px;
+
+}
+
+p[class= home-text] {
+    color: white;
+    line-height: 60px;
+}

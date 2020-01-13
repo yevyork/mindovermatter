@@ -1,0 +1,10 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo {
+    margin-top: 40%;
+    margin-right: 10%;
+    max-width: 50%;
+}
+
