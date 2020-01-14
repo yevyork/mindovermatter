@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin: 20px 20%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    outline: none;
+}
+
+textarea {
+    padding-top: 7%;
+    height: 70px;
+}

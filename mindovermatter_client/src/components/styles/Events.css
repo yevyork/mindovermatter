@@ -32,6 +32,8 @@
 }
 .event-supporting {
     margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.804);
+    font-size: 14px;
 }
 .nodisplay {
     display: none;

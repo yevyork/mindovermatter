@@ -35,7 +35,7 @@ class Events extends React.Component {
         <p className='event-text event-featuring'>Lineup:</p>
         {event.artists.split(', ').map(artist=>(<p className='event-text event-artists'>{artist}</p>))}
         <p className='event-text event-supporting'>{event.supporting_artists}</p>
-        <a href={event.ticket_link} target='_blank' rel="noopener noreferrer" className={all_events.past_event ? 'nodisplay' : 'tickets'}>TICKETS</a>
+        <a href={event.ticket_link} target='_blank' rel="noopener noreferrer" className={event.past_event ? 'nodisplay' : 'tickets'}>TICKETS</a>
         <div className='short-line'></div>
         </div>
     )})

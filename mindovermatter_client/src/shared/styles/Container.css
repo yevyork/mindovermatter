@@ -3,8 +3,8 @@
 }
 
 .line {
-    width: 80%;
+    width: 20%;
     height: 1px;
-    background-color: grey;
-    margin: 10px auto
+    background-color: rgb(128, 128, 128);
+    margin: 10% auto
 }

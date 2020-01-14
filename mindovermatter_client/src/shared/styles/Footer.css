@@ -23,4 +23,6 @@ footer {
 .ra { 
     height: 40px;
     margin-top: 5px;
+    filter: drop-shadow(2px 4px 3px rgba(34, 34, 34, 0.87));
+
 }

@@ -1,0 +1,2 @@
+class Curate < ApplicationRecord
+end

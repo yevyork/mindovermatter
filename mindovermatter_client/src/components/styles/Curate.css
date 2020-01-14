@@ -1,0 +1,12 @@
+.curate-text {
+    color: rgba(255, 255, 255, 0.637);
+    margin: 20px 10%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+}
+
+.curate-melodic {
+    font-weight: 900;
+    color: white;
+    margin: 10px 5%;
+}

@@ -9,7 +9,7 @@ const ContactForm = ({
           <label />
           <input
             placeholder="Name"
-            value={"name"}
+            // value={"name"}
             name="name"
             required
             onChange={"handleChange"}
@@ -18,7 +18,7 @@ const ContactForm = ({
           <label />
           <input
             placeholder="E-mail"
-            value={"email"}
+            // value={"email"}
             name="email"
             required
             onChange={"handleChange"}
@@ -27,7 +27,7 @@ const ContactForm = ({
           <label />
           <textarea
             placeholder="What's on your Mind?/What's the Matter?"
-            value={"message"}
+            // value={"message"}
             name="message"
             required
             onChange={"handleChange"}

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :curates
   resources :merches
   resources :contacts
   resources :events
