@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from '../forms/ContactForm'
 
 class Contact extends React.Component {
     constructor(props) {
@@ -6,8 +7,9 @@ class Contact extends React.Component {
         this.state = {  }
     }
     render() { 
-        return ( <> Contact </> );
+        return ( <> <ContactForm /> </> );
     }
 }
 
 export default Contact;
+

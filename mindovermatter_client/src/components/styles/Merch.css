@@ -1,0 +1,22 @@
+.merch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 15%;
+    border: 1px solid rgba(255, 251, 2, 0.445);
+    border-radius: 5%;
+    max-width: max-content;
+}
+
+.merch-pic {
+    max-width: 60%;
+    box-shadow: 2px 2px 5px 2px rgba(20, 20, 0, 0.445);;
+}
+
+.merch-title, .merch-description {
+    color: white;
+}
+
+.merch-description {
+    margin: 10px 15%
+}

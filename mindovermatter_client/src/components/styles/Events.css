@@ -1,0 +1,56 @@
+.event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-past, .nav-upcoming {
+    margin: 0 auto;
+}
+
+.event-text, .tickets {
+    color: white;
+    letter-spacing: 1px;
+
+}
+.flyer {
+    max-width: 80%;
+}
+.event-featuring {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 30px;
+    color: rgba(255, 251, 2, 0.822);
+
+}
+.event-supporting {
+    margin-bottom: 50px;
+}
+.nodisplay {
+    display: none;
+}
+
+.tickets {
+    font-size: 24px;
+    letter-spacing: 3px;
+
+    padding: 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+}
+
+
+
+.short-line {
+    width: 50%;
+    height: 1px;
+    background-color: grey;
+    margin: 50px auto
+}
