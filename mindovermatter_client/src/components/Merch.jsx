@@ -9,14 +9,17 @@ class Merch extends React.Component {
             merchList: []
          }
     }
-    async componentDidMount() {
-        try {
-          const response = await axios(`http://localhost:3000/merches`);
-          this.setState({ merchList: response.data });
-        } catch (err) {
-          console.error(err);
+    componentDidMount() {
+        this.getMerch()
+    }
+    async getMerch() {
+    
+          const response = await axios(`/merches`);
+          const data = response.data
+          this.setState({ merchList: data });
+       
         }
-      }
+      
     render() { 
         const allmerch = this.state.merchList.map((merch, i) => {
             return(

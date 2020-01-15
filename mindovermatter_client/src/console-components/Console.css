@@ -1,0 +1,29 @@
+.console-merchlist {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin: 20px 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.console-merchimage {
+    max-width: 70px;
+}
+
+button[class='console-button'] {
+    margin: 20px 10px;
+}
+
+.admin-console {
+    color:rgba(251, 255, 0, 0.66);
+    letter-spacing: 2px;
+}
+
+.console-merchtitle {
+    margin: 0 5%
+}
+.pencil {
+    font-size: 25px;
+    margin: 0;
+}

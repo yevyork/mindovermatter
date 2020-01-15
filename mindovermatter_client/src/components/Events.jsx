@@ -16,7 +16,7 @@ class Events extends React.Component {
 
   async componentDidMount() {
     try {
-      const response = await axios(`http://localhost:3000/events`);
+      const response = await axios(`/events`);
       this.setState({ allEvents: response.data });
     } catch (err) {
       console.error(err);

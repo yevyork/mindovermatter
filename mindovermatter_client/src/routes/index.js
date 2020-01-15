@@ -6,6 +6,7 @@ import Events from '../components/Events'
 import Curate from '../components/Curate'
 import Merch from '../components/Merch'
 import Contact from '../components/Contact'
+import Console from '../console-components/Console'
 
 const Routes = () => (
     <Switch>
@@ -15,6 +16,7 @@ const Routes = () => (
         <Route exact path='/curate' component={Curate} />
         <Route exact path='/merch' component={Merch} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/console' component={Console} />
 
     </Switch>
 )
