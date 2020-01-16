@@ -20,15 +20,17 @@ class Contact extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleAdd = async e => {
+  handleAdd = async (e, body) => {
     e.preventDefault();
-    await axios.post("/contacts");
-    this.setState({
-      name: "",
-      contact_info: "",
-      subject: "",
-      message: ""
-    });
+    console.log(body)
+    // let body = {
+    //   name: this.state.name,
+    //   contact_info: this.state.contact_info,
+    //   subject: this.state.subject,
+    //   message: this.state.message
+    // };
+    await axios.post("/contacts", body)
+    
   };
 
   render() {

@@ -15,17 +15,6 @@ class ContactForm extends React.Component {
     this.setState({[e.target.name] : e.target.value})
   }
 
-  // componentWillMount (){
-  //   if(this.props.messages){
-  //     this.setState ({
-  //       name: this.props.messages.name,
-  //       contact_info: this.props.messages.contact_info,
-  //       subject: this.props.messages.subject,
-  //       message: this.props.messages.message
-  //     })
-  //   }
-  // }
-
   handleSubmit =(e) => {
     e.preventDefault()
     this.props.handleSubmit(

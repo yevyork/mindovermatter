@@ -51,7 +51,7 @@ class ContactMessages extends React.Component {
                 
                 <p className='msg msg-name'>Name: {msg.name}</p>
                 <p className='msg msg-contact'>Contact Info: {msg.contact_info}</p>
-                <p className='msg msg-subject'>Subject:</p>
+                <p className='msg msg-subject'>Subject:{msg.subject}</p>
                 <p className='msg msg-msg'>Message: {msg.message}</p>
                 <span className='msg timestamp'  key={msg.id}> <p>Sent on: </p> {msg.created_at.slice(0, 19).split('T').map(time=>(<p>{time}</p>))}</span>
                 <button onClick={()=>this.handleDelete(msg)}>Delete</button>
