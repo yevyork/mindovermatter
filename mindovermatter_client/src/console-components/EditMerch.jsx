@@ -15,7 +15,7 @@ function EditMerch(props) {
         handleSubmit={props.handleSubmit}
         handleUpdate={props.handleUpdate}
         handleChange={props.handleChange}
-        updateID={props.updateID}
+        merchObj={props.merchObj}
       />
     </>
   );

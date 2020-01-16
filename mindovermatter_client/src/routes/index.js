@@ -7,6 +7,7 @@ import Curate from '../components/Curate'
 import Merch from '../components/Merch'
 import Contact from '../components/Contact'
 import Console from '../console-components/Console'
+import ContactMessages from '../console-components/ContactMessages'
 
 const Routes = () => (
     <Switch>
@@ -16,6 +17,8 @@ const Routes = () => (
         <Route exact path='/curate' component={Curate} />
         <Route exact path='/merch' component={Merch} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/console' component={Console} />
+        <Route exact path='/contactmsgs' component={ContactMessages} />
         <Route exact path='/console' component={Console} />
 
     </Switch>

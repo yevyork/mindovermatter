@@ -1,0 +1,12 @@
+.console-nav-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.console-navlink {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.411);
+    outline: 2px double;
+    margin: 6%;
+    padding: 2%;
+}

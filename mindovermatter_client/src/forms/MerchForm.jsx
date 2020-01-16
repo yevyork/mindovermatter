@@ -13,19 +13,23 @@ class MerchForm extends React.Component {
   }
   
   async componentDidMount() {
-console.log(this.props)
-    await fetch(`http://localhost:3000/merches/${this.props.updateID}`, {
-      // body: JSON.stringify(formInputs),
-      method: "GET",
+    this.setState({
+      merchObj:this.props.merchObj
+    })
+// console.log(this.props)
+//     await fetch(`http://localhost:3000/merches/${this.props.updateID}`, {
+//       // body: JSON.stringify(formInputs),
+//       method: "GET",
       
-    })
-    .then(e=>{
-      return e.json()
-    })
-      .then(updatedMerch => {
-        this.setState({currentMerch: updatedMerch})
-      })
-      .catch(error => console.log(error));
+//     })
+//     .then(e=>{
+//       return e.json()
+//     })
+//       .then(updatedMerch => {
+//         this.setState({currentMerch: updatedMerch})
+//       })
+//       .catch(error => console.log(error));
+console.log(this.props.merchObj && this.props.merchObj.img_url)
   };
 
     // if(this.props.merch){
@@ -75,14 +79,14 @@ console.log(this.props)
     // }
   }
   render() {
-   console.log(this.state)
+   console.log(this.props)
     return (
       <div className="form-container">
         <form onSubmit={this.handleSubmit}>
           <label />
           <input
             placeholder="Picture - MUST END w/(jpg/png/gif, etc.) or it wont render"
-            value={this.state.img_url || (this.state.currentMerch && this.state.currentMerch.img_url)}
+            value={this.state.img_url || (this.state.merchObj && this.state.merchObj.img_url)}
             name="img_url"
             required
             onChange={this.handleChange}

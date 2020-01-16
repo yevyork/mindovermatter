@@ -1,3 +1,3 @@
 class Contact < ApplicationRecord
-    validates :name, :contact, :message, presence: true
+    # validates :name, :contact_info, :message, presence: true
 end

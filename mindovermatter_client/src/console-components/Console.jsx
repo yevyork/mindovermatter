@@ -1,8 +1,9 @@
 import React from "react";
 import AddMerch from "./AddMerch";
 import EditMerch from "./EditMerch";
+import ConsoleNav from './ConsoleNav'
 import axios from "axios";
-import "./Console.css";
+import "./styles/Console.css";
 
 class Console extends React.Component {
   constructor(props) {
@@ -30,11 +31,11 @@ class Console extends React.Component {
     this.setState({ merchList: data });
   }
 
-  toggleForm = (id) => {
-      console.log(id)
+  toggleForm = (obj) => {
+      console.log(obj)
     this.setState({ 
         formVisible: !this.state.formVisible,
-        updateID: id
+        merchObj: obj
     });
   };
 
@@ -109,16 +110,18 @@ class Console extends React.Component {
           DELETE
         </button>
 
-        <button className="console-button" onClick={()=>this.toggleForm(merch.id)}>
+        <button className="console-button" onClick={()=>this.toggleForm(merch)}>
           <p className="pencil">✐</p>
         </button>
       </div>
     ));
     return (
       <>
+      <ConsoleNav />
         <h1 className="admin-console">
-          THIS IS THE ADMIN CONSOLE<br></br>
-          <br></br>READ INSTRUCTIONS CAREFULLY
+            
+          MERCH SECTION<br></br>
+          <br></br>
         </h1>
         # CURRENTLY FOR SALE: {amtOfMerch}<br></br>
         Once deleted, it cannot be undone- <br></br>must be re-added to restore
@@ -133,7 +136,7 @@ class Console extends React.Component {
             merch={this.state.merchList}
             handleUpdate={this.handleUpdate}
             toggleForm={this.toggleForm}
-            updateID={this.state.updateID}
+            merchObj={this.state.merchObj}
           /> : null}
         </div>
       </>

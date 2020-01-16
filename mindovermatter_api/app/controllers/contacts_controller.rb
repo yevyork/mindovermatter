@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts
   def index
-    @contacts = Contact.all
+    @contacts = Contact.all.reverse
 
     render json: @contacts
   end
@@ -46,6 +46,6 @@ class ContactsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def contact_params
-      params.require(:contact).permit(:name, :contact, :message)
+      params.require(:contact).permit(:name, :contact_info, :subject, :message)
     end
 end
