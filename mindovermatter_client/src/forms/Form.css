@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+input, textarea, button {
+    margin: 20px 0%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid white;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    outline: none;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+}
+textarea {
+    padding-top: 7%;
+    height: 70px;
+}
+
+@media screen and (min-width: 500px) {
+
+    form {
+        margin: 5% ;
+        align-items: center;
+    }
+    input, textarea, button {
+        margin: 5% 30%;
+        width: 80%
+    }
+
+    .curate-form {
+        width: 40%;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+}

@@ -1,0 +1,62 @@
+.console-merchlist {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin: 20px 5px;
+    align-content: center;
+    text-align: center;
+}
+.merch-items {
+    color: white;
+}
+.console-merchimage {
+    max-width: 70px;
+}
+
+button[class='console-button'] {
+    margin: 20px 10px;
+}
+
+.admin-console {
+    color:rgba(251, 255, 0, 0.66);
+    letter-spacing: 2px;
+}
+
+.console-merchtitle {
+    margin: 0 5%
+}
+.pencil {
+    font-size: 25px;
+    margin: 0;
+}
+
+@media screen and (min-width:500px) {
+    
+    .console-merchlist {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        margin: 5% auto;
+        align-content: center;
+        text-align: center;
+    }
+    .console-merchimage {
+        max-width: 15%;
+    }
+    button[class='console-button'] {
+        margin: 2% 5%;
+        width: 10%;
+    }
+
+    .console-merchform {
+        width: 50%;
+        margin: 5px auto;
+    }
+    /* .merch-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    } */
+}
