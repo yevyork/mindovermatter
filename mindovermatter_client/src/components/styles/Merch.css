@@ -1,9 +1,8 @@
 .merch-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     margin: 40px 15%;
-    border: 1px solid rgba(255, 251, 2, 0.445);
     border-radius: 5%;
     max-width: max-content;
 }
@@ -15,8 +14,36 @@
 
 .merch-title, .merch-description {
     color: white;
+    margin: 4% auto;
 }
 
 .merch-description {
     margin: 10px 15%
+}
+
+.buy {
+    width: 20%;
+    text-decoration: none;
+    background-color: rgba(128, 0, 128, 0.29);
+    color: white;
+    border: 1px solid white;
+    padding: 3%;
+    border-radius: 10%;
+    outline: none;
+}
+@media screen and (min-width: 500px) {
+    .shop {
+        display:flex;
+        justify-content: space-between;
+
+        margin: 10%;
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+    .merch-container {
+        justify-content: space-around;
+        max-width: 20%;
+        margin: 6%;
+    }
 }

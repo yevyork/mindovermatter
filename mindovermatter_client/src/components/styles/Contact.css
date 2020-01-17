@@ -1,0 +1,25 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.contact-questions {
+    color: white;
+    margin: 10%;
+}
+.contact-form {
+    max-width: 60%;
+    margin: auto;
+}
+
+@media screen and (min-width: 500px) {
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .contact-form {
+        width: 70%
+    }
+}

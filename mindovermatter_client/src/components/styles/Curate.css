@@ -1,12 +1,49 @@
 .curate-text {
-    color: rgba(255, 255, 255, 0.637);
-    margin: 20px 10%;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.424);
-    font-weight: 500;
+  color: rgba(255, 255, 255, 0.637);
+  margin: 20px 10%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.424);
+  font-weight: 500;
 }
 
 .curate-melodic {
-    font-weight: 900;
-    color: white;
-    margin: 10px 5%;
+  font-weight: 900;
+  color: white;
+  margin: 10px 5%;
+}
+
+@media screen and (min-width: 500px) {
+  .curate-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .curate-text-container {
+    margin-top: 10%;
+  }
+
+  .curate-form {
+      margin-right: 5%;
+  }
+
+  .expand {
+      position: sticky;
+    animation: expand 10s normal forwards ease-in-out;
+    animation-delay: 2s;
+  }
+  @keyframes expand {
+    0% {
+      letter-spacing: 0px;
+      margin-left: 0%;
+    }
+
+    50% {
+      letter-spacing: 25px;
+      margin-left: 2%;
+      
+    }
+    100% {
+      letter-spacing: 0px;
+      margin-left: 0%;
+    }
+  }
 }

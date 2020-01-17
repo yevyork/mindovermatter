@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../forms/ContactForm";
 import axios from "axios";
-
+import './styles/Contact.css'
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -36,13 +36,16 @@ class Contact extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <>
+      <div className="contact-container">
+        <p className='contact-questions'>Questions? Comments? Compliments? Concerns? <br></br><br></br>These things matter to us. <br></br>Please fill out the fields below and we'll get back to you.</p>
+      <div className='contact-form'>
         <ContactForm
           messages={this.state.inbox}
           handleChange={this.handleChange}
           handleSubmit={this.handleAdd}
         />
-      </>
+      </div>
+      </div>
     );
   }
 }

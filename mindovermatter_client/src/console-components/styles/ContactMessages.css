@@ -16,3 +16,30 @@ div > h3 {
     color: white;
     margin-bottom: 50px;
 }
+
+@media screen and (min-width: 500px) {
+
+    .message {
+        border: 2px solid rgba(255, 255, 255, 0.198);
+        margin: 4%
+    }
+    
+    .msg {
+        color: white;
+        margin: 2% 
+    
+    }
+    .timestamp {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    div > h3 {
+        color: white;
+        margin-bottom: 50px;
+    }
+    button[class='back'] {
+        max-width: 15%;
+        margin: 2%;
+    }
+}

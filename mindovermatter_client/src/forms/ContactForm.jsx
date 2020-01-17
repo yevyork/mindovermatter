@@ -41,7 +41,7 @@ render() {
         <form onSubmit={this.handleSubmit}>
           <label />
           <input
-            placeholder="Name"
+            placeholder="Full Name"
             value={this.state.name}
             name="name"
             required

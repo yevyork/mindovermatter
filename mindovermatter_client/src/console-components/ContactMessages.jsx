@@ -54,13 +54,13 @@ class ContactMessages extends React.Component {
                 <p className='msg msg-subject'>Subject:{msg.subject}</p>
                 <p className='msg msg-msg'>Message: {msg.message}</p>
                 <span className='msg timestamp'  key={msg.id}> <p>Sent on: </p> {msg.created_at.slice(0, 19).split('T').map(time=>(<p>{time}</p>))}</span>
-                <button onClick={()=>this.handleDelete(msg)}>Delete</button>
+                <button className='back' onClick={()=>this.handleDelete(msg)}>Delete</button>
 
             </div>
         )})
         return ( 
         <div>
-            <button onClick={this.goBack}>Back</button>
+            <button className='back'onClick={this.goBack}>Back</button>
             <h3>Messages:</h3>
             <p>({this.state.inbox.length})</p>
         <div>{message}</div>

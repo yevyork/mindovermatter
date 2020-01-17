@@ -9,18 +9,20 @@
     line-height: 50px;
     margin: 15px 40px 15px 0px;
     width: 60px;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.55)
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.55);
+    transition: transform .1s;
 
 }
 
 .active {
     color: rgb(255, 255, 255);
-    letter-spacing: 1px;;
-    animation: unblur 0.4s normal forwards ease-in-out;
+    letter-spacing: 1px;
+    font-size: 20px;
+    
 }
 
 .nav:hover {
-    animation: movenav 0.4s normal forwards ease-in-out;
+    transform: skew(-180deg);
 }
 
 @keyframes unblur {
@@ -39,5 +41,26 @@
     }
     100% {
         transform: translateX(-10px);
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .nav-main-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2% auto;
+        width: 60%;
+        margin-left: 21.5%;
+        text-align: center;
+
+    }
+
+    .nav {
+        line-height: 0;
+        width: 20%;
+        animation: unblur 0.4s normal forwards ease-in-out;
+        
+
     }
 }

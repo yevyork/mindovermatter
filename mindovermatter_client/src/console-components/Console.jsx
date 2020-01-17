@@ -15,7 +15,8 @@ class Console extends React.Component {
         img_url: "",
         title: "",
         description: "",
-        link_to_merch: ""
+        link_to_merch: "",
+        id: ""
       },
     //   updateID:''
     };
@@ -31,11 +32,11 @@ class Console extends React.Component {
     this.setState({ merchList: data });
   }
 
-  toggleForm = (obj) => {
-      console.log(obj)
+  toggleForm = (id) => {
+      console.log(id)
     this.setState({ 
         formVisible: !this.state.formVisible,
-        merchObj: obj
+        id: this.state.merchList.id,
     });
   };
 
@@ -47,7 +48,7 @@ class Console extends React.Component {
         img_url: "",
         title: "",
         description: "",
-        link_to_merch: ""
+        link_to_merch: "",
       }
     });
     console.log(this.state);
@@ -118,27 +119,30 @@ class Console extends React.Component {
     return (
       <>
       <ConsoleNav />
-        <h1 className="admin-console">
-            
-          MERCH SECTION<br></br>
-          <br></br>
-        </h1>
-        # CURRENTLY FOR SALE: {amtOfMerch}<br></br>
-        Once deleted, it cannot be undone- <br></br>must be re-added to restore
-        {consoleMerchList}
-        FILL OUT TO ADD MERCH
-        <div className="console-merchform">
+      <div className="console-merchform">
           <AddMerch
             merch={this.state.merchList}
             handleSubmit={this.handleAdd}
           />
           {this.state.formVisible ? <EditMerch 
             merch={this.state.merchList}
-            handleUpdate={this.handleUpdate}
+            handleSubmit={this.handleUpdate}
             toggleForm={this.toggleForm}
-            merchObj={this.state.merchObj}
+            id={this.state.id}
           /> : null}
         </div>
+        <h1 className="admin-console">
+            
+          MERCH SECTION<br></br>
+          <br></br>
+          </h1>
+          <div className='merch-items'>
+        
+        # CURRENTLY FOR SALE: {amtOfMerch}<br></br>
+        Once deleted, it cannot be undone- <br></br>must be re-added to restore
+        {consoleMerchList}
+        </div>
+       
       </>
     );
   }
