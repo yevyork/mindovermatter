@@ -6,7 +6,7 @@ One of my side interests is live electronic music, specifically in the genres/su
 
 Mind/Matter has organized several successful events and we aren't just stopping in the United States. I enjoy seeing the result every time an event takes place, look forward to adding more contributions to the site, and contributions to ensure the team has as many resources as they need to bring top-tier experiences to all our patrons. 
 
-Front end made with React.js
+Front end made with React.js, 
 Back end framed with Rails, using PostgreSQL.
 
 #### Features
