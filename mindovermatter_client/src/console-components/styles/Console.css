@@ -6,7 +6,7 @@
     align-content: center;
     text-align: center;
 }
-.merch-items {
+.merch-items, .console-merchtitle {
     color: white;
 }
 .console-merchimage {
@@ -39,6 +39,17 @@ button[class='console-button'] {
     border-radius: 50%;
     background-color: black;
     margin: auto;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+    margin: 2em;
+}
+
+.amt-for-sale {
+    margin-top: 10%;
+    color: white;
 }
 
 @media screen and (min-width:500px) {

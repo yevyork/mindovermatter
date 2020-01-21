@@ -40,9 +40,7 @@ class ContactMessages extends React.Component {
        .catch(error => console.log(error))
       }
 
-    goBack = () => {
-        window.history.back()
-    }
+
     render() { 
         const allMessages = this.state.inbox
         console.log(allMessages)
@@ -61,7 +59,7 @@ class ContactMessages extends React.Component {
         )})
         return ( 
         <div>
-                      <Link className='back'to='/merchconsole'>Back</Link>
+                    <Link className='back'to='/console'>Back</Link>
 
             <h3>Messages:</h3>
             <p className='totalmsgs'>({this.state.inbox.length})</p>

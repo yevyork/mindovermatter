@@ -65,7 +65,7 @@ handleUpdate = (newMerch) => {
       console.log(this.state)
       return (
         <div className="form-container">
-          <h1>Edit Merch</h1>
+          <h3>Edit Merch</h3>
           <Link className='back'to='/merchconsole'>Back</Link>
           <form onSubmit={this.onSubmit}>
             <label htmlFor="img_url"/>

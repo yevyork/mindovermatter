@@ -81,9 +81,9 @@ class MerchConsole extends React.Component {
             ))
         return ( 
         <div className='merch-console-container'>
-            <Link to='/console'>Back</Link>
-            <Link to='/AddMerch'>Add Merch</Link>
-            <p className='console-merchtitle'> # for sale: {totalItemsForSale}</p>
+            <Link className='back' to='/console'>Back</Link>
+            <Link className='back' to='/AddMerch'>Add Merch</Link>
+            <p className='amt-for-sale'> # for sale: {totalItemsForSale}</p>
             {renderMerch}</div>
         );
     }

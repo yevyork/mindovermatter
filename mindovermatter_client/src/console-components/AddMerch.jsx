@@ -3,9 +3,6 @@ import MerchForm from '../forms/MerchForm'
 import axios from 'axios'
 import { Redirect, Link } from 'react-router-dom'
 class AddMerch extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     handleAdd = async (event, formInputs) => {
         event.preventDefault();
         await axios.post("/merches", formInputs);

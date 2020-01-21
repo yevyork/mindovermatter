@@ -19,75 +19,75 @@ class EventForm extends React.Component {
   render() {
     return (
       <div className="form-container">
-        <form onSubmit={this.props.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <label />
           <input
             placeholder="Date"
-            value={this.props.date}
+            value={this.state.date}
             name="date"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label />
           <input
             placeholder="Artwork URL"
-            value={this.props.imgurl}
+            value={this.state.imgurl}
             name="imgurl"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label />
           <input
             placeholder="Organizer"
-            value={this.props.organizer}
+            value={this.state.organizer}
             name="organizer"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label />
           <input
             placeholder="Venue"
-            value={this.props.venue}
+            value={this.state.venue}
             name="venue"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label>Separate Artists/Supporting Artists with a comma</label>
           <input
             placeholder="Artists"
-            value={this.props.artists}
+            value={this.state.artists}
             name="artists"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label />
           <input
             placeholder="Supporting Artists"
-            value={this.props.supporting_artists}
+            value={this.state.supporting_artists}
             name="supporting_artists"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label />
           <input
             placeholder="Link to buy tickets"
-            value={this.props.ticket_link}
+            value={this.state.ticket_link}
             name="ticket_link"
             required
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           />
 
           <label>Has this event happened already?</label>
           <select
             defaultValue={null}
             name="past_event"
-            onChange={this.props.handleChange}
+            onChange={this.handleChange}
           >
             <option value={null} label="Choose One" />
             <option value={true} label="Yes" />
