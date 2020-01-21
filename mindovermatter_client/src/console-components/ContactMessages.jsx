@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import './styles/ContactMessages.css'
 
 class ContactMessages extends React.Component {
@@ -60,9 +61,10 @@ class ContactMessages extends React.Component {
         )})
         return ( 
         <div>
-            <button className='back'onClick={this.goBack}>Back</button>
+                      <Link className='back'to='/merchconsole'>Back</Link>
+
             <h3>Messages:</h3>
-            <p>({this.state.inbox.length})</p>
+            <p className='totalmsgs'>({this.state.inbox.length})</p>
         <div>{message}</div>
         </div>
         );

@@ -8,6 +8,9 @@ import Merch from '../components/Merch'
 import Contact from '../components/Contact'
 import Console from '../console-components/Console'
 import ContactMessages from '../console-components/ContactMessages'
+import MerchConsole from '../console-components/MerchConsole'
+import AddMerch from '../console-components/AddMerch'
+import EditMerch from '../console-components/EditMerch'
 
 const Routes = () => (
     <Switch>
@@ -20,6 +23,9 @@ const Routes = () => (
         <Route exact path='/console' component={Console} />
         <Route exact path='/contactmsgs' component={ContactMessages} />
         <Route exact path='/console' component={Console} />
+        <Route exact path='/merchconsole' component={MerchConsole} />
+        <Route exact path='/addmerch' component={AddMerch} />
+        <Route exact path='/editmerch/:id' component={EditMerch} />
 
     </Switch>
 )

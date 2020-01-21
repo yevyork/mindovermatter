@@ -1,24 +1,35 @@
 import React from 'react';
 import MerchForm from '../forms/MerchForm'
-
-function AddMerch(props) {
-
-
-
-        return ( <>
-        <br></br>
-        <h3>FILL OUT TO ADD A PRODUCT ↓</h3>
-        <MerchForm
-        merch = {props.merch}
-        handleSubmit = {props.handleSubmit}
-        // handleChange = {props.handleChange}
-        // handleDelete = {props.handleDelete}
-        />
-        
-        </> );
+import axios from 'axios'
+import { Redirect, Link } from 'react-router-dom'
+class AddMerch extends React.Component {
+    constructor(props) {
+        super(props)
     }
+    handleAdd = async (event, formInputs) => {
+        event.preventDefault();
+        await axios.post("/merches", formInputs);
+        this.setState({
+            formInputs:{
+                img_url: "",
+                title: "",
+                description: "",
+                link_to_merch: ""
+            }
+        })
+    };
 
- 
-export default AddMerch;
+    render() { 
+        return (  
+            <div className='addmerch-container'>
+                <Link className='back'to='/merchconsole'>Back</Link>
+        <br></br>
+            <h3>FILL OUT TO ADD A PRODUCT ↓</h3>
+            <MerchForm
+            handleSubmit = {this.handleAdd} />
+            </div>
+        )
+    }
+}
 
-
+export default AddMerch

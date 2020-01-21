@@ -48,6 +48,6 @@ class MerchesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def merch_params
-      params.require(:merch).permit(:img_url, :title, :description, :link_to_merch)
+      params.permit(:img_url, :title, :description, :link_to_merch)
     end
 end

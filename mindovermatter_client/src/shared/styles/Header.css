@@ -20,18 +20,18 @@
     .main-logo {
         margin: 4% auto;
         max-width: 20%;
-        animation: fadelogo 2s forwards ease-in
+        animation: fadelogo 1s forwards ease-in
     }
 
     @keyframes fadelogo {
         0% {
-            opacity: 0.8;
+            opacity: 0.6;
         }
         20% {
             opacity: 1;
         }
         60% {
-            opacity: 0.05
+            opacity: 0.2
         }
         100% {
             opacity: 0.7;

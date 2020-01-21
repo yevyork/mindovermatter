@@ -30,6 +30,17 @@ button[class='console-button'] {
     margin: 0;
 }
 
+.console-link {
+    text-decoration: none;
+    color: white;
+    border: 1px solid grey;
+    height: max-content;
+    padding: 2%;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+}
+
 @media screen and (min-width:500px) {
     
     .console-merchlist {
@@ -43,15 +54,16 @@ button[class='console-button'] {
     .console-merchimage {
         max-width: 15%;
     }
-    button[class='console-button'] {
+    .console-button {
         margin: 2% 5%;
-        width: 10%;
-    }
+        width: 10%;    }
 
     .console-merchform {
         width: 50%;
         margin: 5px auto;
     }
+
+  
     /* .merch-items {
         display: flex;
         flex-direction: column;

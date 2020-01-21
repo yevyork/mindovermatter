@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
-import Input from "./Input";
-import axios from "axios";
+import { Redirect } from 'react-router-dom'
+
 
 class MerchForm extends React.Component {
   constructor(props) {
@@ -15,63 +15,12 @@ class MerchForm extends React.Component {
     };
   }
 
-  async componentDidMount() {
-    this.getMerch();
 
-    if (this.state.merchList) {
-      this.setState({
-        img_url: this.props.merch.img_url,
-        title: this.props.merch.title,
-        description: this.props.merch.description,
-        link_to_merch: this.props.merch.link_to_merch,
-        id: this.props.merch.id
-      });
-    }
-  }
 
-  async getMerch() {
-    const response = await axios(`/merches`);
-    const data = response.data;
-    this.setState({ merchList: data });
-  }
-  // console.log(this.props)
-  //     await fetch(`http://localhost:3000/merches/${this.props.updateID}`, {
-  //       // body: JSON.stringify(formInputs),
-  //       method: "GET",
 
-  //     })
-  //     .then(e=>{
-  //       return e.json()
-  //     })
-  //       .then(updatedMerch => {
-  //         this.setState({currentMerch: updatedMerch})
-  //       })
-  //       .catch(error => console.log(error));
-
-  // if(this.props.merch){
-  //   this.setState ({
-  //     // merchId: this.props.merch.id,
-  //     img_url: this.props.merch.img_url,
-  //     title: this.props.merch.title,
-  //     description: this.props.merch.description,
-  //     link_to_merch: this.props.merch.link_to_merch
-  //   })
-  // }
-
-  componentWillMount() {
-    if (this.state.merchList) {
-      this.setState({
-        img_url: this.state.merchList.img_url || "",
-        title: this.state.merchList.title || "",
-        description: this.state.merchList.description || "",
-        link_to_merch: this.state.merchList.link_to_merch || "",
-        id: this.state.merchList.id || ""
-      });
-    }
-  }
 
   handleChange = e => {
-    this.setState({ [e.target.id]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   handleSubmit = e => {
@@ -88,46 +37,43 @@ class MerchForm extends React.Component {
       description: "",
       link_to_merch: ""
     });
-    if (this.props.merch) {
-      this.props.toggleForm();
-    }
+    
   };
 
   render() {
- 
     return (
       <div className="form-container">
         <form onSubmit={this.handleSubmit}>
-          <label />
-          <Input
-            placeholder="Picture - MUST END w/(jpg/png/gif, etc.) or it wont render"
-            value={this.props.img_url}
+          <label htmlFor="img_url">Image URL</label>
+          <input
+            placeholder="MUST END w/(jpg/png/gif, etc.) or it wont render"
+            value={this.state.img_url}
             name="img_url"
             required
-            handleChange={this.handleChange}
+            onChange={this.handleChange}
           />
-          <label />
-          <Input
+          <label htmlFor="title">Item Title</label>
+          <input
             placeholder="Title - required"
             value={this.state.title}
             name="title"
             required
-            handleChange={this.handleChange}
+            onChange={this.handleChange}
           />
-          <label />
-          <Input
+          <label htmlFor="description">Item Description</label>
+          <input
             placeholder="Description"
             value={this.state.description}
             name="description"
-            handleChange={this.handleChange}
+            onChange={this.handleChange}
           />
-          <label />
-          <Input
+          <label htmlFor="link_to_merch">Link to Purchase</label>
+          <input
             placeholder="Link to item - required"
             value={this.state.link_to_merch}
             name="link_to_merch"
             required
-            handleChange={this.handleChange}
+            onChange={this.handleChange}
           />
           <input type="submit" value={this.state.id ? "Update" : "Add"} />
         </form>
