@@ -12,6 +12,9 @@ import MerchConsole from '../console-components/MerchConsole'
 import AddMerch from '../console-components/AddMerch'
 import EditMerch from '../console-components/EditMerch'
 import EventConsole from '../console-components/EventConsole'
+import AddEvent from '../console-components/AddEvent'
+import EditEvent from '../console-components/EditEvent'
+
 
 const Routes = () => (
     <Switch>
@@ -28,6 +31,9 @@ const Routes = () => (
         <Route exact path='/addmerch' component={AddMerch} />
         <Route exact path='/editmerch/:id' component={EditMerch} />
         <Route exact path='/eventconsole' component={EventConsole} />
+        <Route exact path='/addevent' component={AddEvent} />
+        <Route exact path='/editevent/:id' component={EditEvent} />
+
 
     </Switch>
 )

@@ -16,6 +16,34 @@ class EventForm extends React.Component {
     };
   }
 
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.handleSubmit(e, {
+      date: this.state.date,
+      imgurl: this.state.imgurl,
+      organizer: this.state.organizer,
+      venue: this.state.venue,
+      artists: this.state.artists,
+      supporting_artists: this.state.supporting_artists,
+      ticket_link: this.state.ticket_link,
+      past_event: this.state.past_event
+    });
+    this.setState({
+      date: "",
+      imgurl: "",
+      organizer: "Mind/Matter",
+      venue: "",
+      artists: "",
+      supporting_artists: "",
+      ticket_link: "",
+      past_event: null
+    });
+    
+  };
   render() {
     return (
       <div className="form-container">
