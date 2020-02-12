@@ -7,56 +7,59 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Event.create([{
-    date: 'February 22nd 2020',
-    imgurl: 'https://i.imgur.com/0NQafeM.jpg',
-    organizer: 'Mind/Matter',
-    venue: 'Knockdown Center',
-    artists: 'Ae:ther[Live], Kevin De Vries, Moonwalk, Radio Slave, Woo York[Live]',
-    supporting_artists: 'Adam Braiman',
-    ticket_link: 'https://www.eventbrite.com/e/mind-matter-tickets-86608691929',
-    past_event: false
-},
-{
-    date: 'November 29th 2019',
-    imgurl: 'https://i.imgur.com/sqAFYxh.jpg',
-    organizer: 'Mind/Matter X Techno Brooklyn',
-    venue: 'Analog Brooklyn',
-    artists: 'Agents Of Time, Unseen., Amiti',
-    supporting_artists: "",
-    ticket_link: "",
-    past_event: true
-},
-{
-    date: 'September 20th 2019',
-    imgurl: 'https://i.imgur.com/cWWRnle.jpg',
-    organizer: 'Mind/Matter',
-    venue: 'Bogart House',
-    artists: 'Soel, ⌀ostil, Amiti',
-    supporting_artists: "",
-    ticket_link: "",
-    past_event: true
-},
-{
-    date: 'June 7th 2019',
-    imgurl: 'https://i.imgur.com/h9DcRHP.jpg',
-    organizer: 'Mind/Matter',
-    venue: 'Bogart House',
-    artists: 'Keith Carnal, Hunter/Game, Adam Braiman',
-    supporting_artists: "",
-    ticket_link: "",
-    past_event: true
-},
-{
-    date: 'March 9th 2019',
-    imgurl: 'https://i.imgur.com/vJrYFyB.jpg',
-    organizer: 'Mind/Matter',
-    venue: 'The PaperBox',
-    artists: 'Soel, Adam Braiman, Tony Paniro',
-    supporting_artists: "",
-    ticket_link: "",
-    past_event: true
-}
+Event.create([
+    {
+        date: 'March 9th 2019',
+        imgurl: 'https://i.imgur.com/vJrYFyB.jpg',
+        organizer: 'Mind/Matter',
+        venue: 'The PaperBox',
+        artists: 'Soel, Adam Braiman, Tony Paniro',
+        supporting_artists: "",
+        ticket_link: "",
+        past_event: true
+    }, 
+    {
+        date: 'June 7th 2019',
+        imgurl: 'https://i.imgur.com/h9DcRHP.jpg',
+        organizer: 'Mind/Matter',
+        venue: 'Bogart House',
+        artists: 'Keith Carnal, Hunter/Game, Adam Braiman',
+        supporting_artists: "",
+        ticket_link: "",
+        past_event: true
+    },
+    {
+        date: 'September 20th 2019',
+        imgurl: 'https://i.imgur.com/cWWRnle.jpg',
+        organizer: 'Mind/Matter',
+        venue: 'Bogart House',
+        artists: 'Soel, ⌀ostil, Amiti',
+        supporting_artists: "",
+        ticket_link: "",
+        past_event: true
+    },
+
+    {
+        date: 'November 29th 2019',
+        imgurl: 'https://i.imgur.com/sqAFYxh.jpg',
+        organizer: 'Mind/Matter X Techno Brooklyn',
+        venue: 'Analog Brooklyn',
+        artists: 'Agents Of Time, Unseen., Amiti',
+        supporting_artists: "",
+        ticket_link: "",
+        past_event: true
+    },
+    {
+        date: 'February 22nd 2020',
+        imgurl: 'https://i.imgur.com/0NQafeM.jpg',
+        organizer: 'Mind/Matter',
+        venue: 'Knockdown Center',
+        artists: 'Ae:ther[Live], Kevin De Vries, Moonwalk, Radio Slave, Woo York[Live]',
+        supporting_artists: 'Adam Braiman',
+        ticket_link: 'https://www.eventbrite.com/e/mind-matter-tickets-86608691929',
+        past_event: false
+    }
+
 ])
 
 Merch.create([{

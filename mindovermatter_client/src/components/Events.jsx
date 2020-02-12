@@ -68,7 +68,7 @@ class Events extends React.Component {
     return (
       <div className="events-container">
         <div className="event-nav-container">
-          <NavLink
+          {/* <NavLink
             to="#upcoming"
             className="nav nav-upcoming"
             activeClassName="active"
@@ -77,7 +77,7 @@ class Events extends React.Component {
           </NavLink>
           <NavLink to="#past" className="nav nav-past" activeClassName="">
             Past
-          </NavLink>
+          </NavLink> */}
         </div>
         <br></br>
         <br></br>

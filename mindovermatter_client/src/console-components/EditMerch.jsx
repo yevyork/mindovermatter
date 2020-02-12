@@ -46,7 +46,9 @@ class EditMerch extends React.Component {
           description: this.refs.description.value,
           link_to_merch: this.refs.link_to_merch.value
         }
+        console.log(newMerch)
         this.handleUpdate(newMerch);
+        
         e.preventDefault();
       } 
 

@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
   # GET /events
   def index
-    @events = Event.all
+    @events = Event.all.reverse()
 
     render json: @events
   end
@@ -46,6 +46,6 @@ class EventsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def event_params
-      params.require(:event).permit(:date, :imgurl, :organizer, :venue, :artists, :supporting_artists, :ticket_link)
+      params.permit(:date, :imgurl, :organizer, :venue, :artists, :supporting_artists, :ticket_link, :past_event)
     end
 end

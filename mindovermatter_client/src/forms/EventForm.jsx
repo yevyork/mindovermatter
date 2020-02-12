@@ -45,6 +45,7 @@ class EventForm extends React.Component {
     
   };
   render() {
+    console.log(this.state)
     return (
       <div className="form-container">
         <form onSubmit={this.handleSubmit}>
@@ -98,7 +99,7 @@ class EventForm extends React.Component {
             placeholder="Supporting Artists"
             value={this.state.supporting_artists}
             name="supporting_artists"
-            required
+            
             onChange={this.handleChange}
           />
 
